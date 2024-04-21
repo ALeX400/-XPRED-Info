@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ajutor pentru Joc</title>
+<style>
+    body {
+        background-color: #121212;
+        color: #FFFFFF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        backdrop-filter: blur(5px);
+    }
+    h2 {
+        text-align: center;
+        color: #0f0;
+        font-size: 24px;
+    }
+    .info-section {
+        margin-top: 20px;
+        padding: 10px;
+        border-left: 5px solid limegreen;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+    }
+    .command:hover {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .command {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 2px;
+        background-color: #222;
+        border-radius: 4px;
+        font-family: monospace;
+        color: lime;
+        border: 1px solid #0f0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ajutor</h2>
+        <div class="info-section">
+            <p><b>Oamenii au:</b></p>
+            <ul>
+                <li>BAZOOKA (comandă: <span class="command">/bazookahelp</span>)</li>
+            </ul>
+            <p><b>BINDURI:</b></p>
+            <ul>
+                <li><span class="command">ppfire=plasma</span> - Lansează un atac cu plasma</li>
+                <li><span class="command">+setlaser=plantare laser</span> - Pune un laser</li>
+                <li><span class="command">+dellaser=eliminare laser</span> - Scoate un laser</li>
+            </ul>
+            <p><b>Exemple de comenzi pentru configurarea tastelor:</b></p>
+            <ul>
+                <li>Cum pot pune laser? <span class="command">bind [tasta dorită] +setlaser</span></li>
+                <li>Cum pot scoate laser-ul? <span class="command">bind [tasta dorită] +dellaser</span></li>
+                <li>Cum pot da cu plasma atunci când sunt predator? <span class="command">bind [tasta dorită] ppfire</span></li>
+                <li>Poți schimba și modul de cameră atunci când ești predator <span class="command">bind [tasta dorită] pcview</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
